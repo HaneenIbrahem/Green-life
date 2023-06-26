@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0d928dbd-3a70-48af-adad-115f70c33915" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="tsconfig.json" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+    </include_path>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="3" />
+  </component>
+  <component name="ProjectId" id="21EfpE5mU8g2bD8szGRlFjUIGcC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Green Life" />
+      <recent name="C:\xampp\htdocs\Green Life\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Green Life\img" />
+      <recent name="C:\xampp\htdocs\Green Life" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0d928dbd-3a70-48af-adad-115f70c33915" name="Changes" comment="" />
+      <created>1637511347557</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637511347557</updated>
+      <workItem from="1637511349247" duration="406000" />
+      <workItem from="1637511816793" duration="18361000" />
+      <workItem from="1637566523869" duration="469000" />
+      <workItem from="1637613822955" duration="9662000" />
+      <workItem from="1637652283008" duration="5217000" />
+      <workItem from="1637667766800" duration="5541000" />
+      <workItem from="1637696027610" duration="161000" />
+      <workItem from="1637698068214" duration="2633000" />
+      <workItem from="1637769364238" duration="14278000" />
+      <workItem from="1637825174460" duration="598000" />
+      <workItem from="1637858078348" duration="21396000" />
+      <workItem from="1637959576160" duration="1000000" />
+      <workItem from="1637960612003" duration="726000" />
+      <workItem from="1637961409890" duration="6407000" />
+      <workItem from="1637996595757" duration="2771000" />
+      <workItem from="1638010192490" duration="547000" />
+      <workItem from="1638091282781" duration="3771000" />
+      <workItem from="1638124165662" duration="9260000" />
+      <workItem from="1638173007439" duration="874000" />
+      <workItem from="1638196197341" duration="2581000" />
+      <workItem from="1638198892320" duration="7767000" />
+      <workItem from="1638257573648" duration="278000" />
+      <workItem from="1638357136804" duration="1890000" />
+      <workItem from="1638368804041" duration="23908000" />
+      <workItem from="1638430222762" duration="573000" />
+      <workItem from="1638460218872" duration="21563000" />
+      <workItem from="1638517280036" duration="26648000" />
+      <workItem from="1638690174640" duration="39398000" />
+      <workItem from="1638775615547" duration="667000" />
+      <workItem from="1638808641833" duration="13846000" />
+      <workItem from="1638873212461" duration="1374000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
