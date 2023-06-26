@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Special+Elite&display=swap');
+@font-face {
+    font-family: myFirstFont2;
+    /*src: url("fonts/Raccosetta demo.ttf");*/
+}
+.navbar {
+    width: 100%;
+    background-color: #d6f5d6;
+    overflow: auto;
+    height: 50px;
+}
+.link-1 {
+
+    float: left;
+    width:5%;
+    text-align: center;
+    transition: 0.3s ease;
+    background-color: rgba(255, 51, 133,0);
+    color:  #4e4e32;
+    font-size: 17px;
+    text-decoration: none;
+    border-top: 4px white;
+    border-bottom: 4px white;
+    padding: 3px;
+    margin-top: 7px;
+    margin-left: 10%;
+    font-family: myFirstFont2;
+}
+.link-1:hover {
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    margin-top: 5px;
+    margin-bottom: 4px;
+    color: #27ae60;
+}
+
+.z{
+    transition: transform .2s;
+    width: 100px;
+    height: 100px;
+}
+
+.z:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+}

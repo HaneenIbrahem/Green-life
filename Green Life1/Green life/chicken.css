@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital@1&family=Dancing+Script:wght@500&display=swap');
+<!-- Import the google font style sheet into the current style sheet -->
+*{
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; <!-- sets how the total width and height of an element is calculated -->
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+
+}
+html{
+    font-size: 63%;
+    overflow-x: hidden; <!-- The overflow is clipped, and the rest of the content will be invisible -->
+    scroll-badding-top: 5.5rem; <!-- adjust the snapping container’s optimal viewing region -->
+    scroll-behavior: smooth;
+}
+
+:root{
+<!-- matches the root element of a tree representing the document.-->
+    --green:#27ae60;
+    --black:#192a56;
+    --light_color:#666;
+    --shadow_box:0.5rem 1.5rem rgba(0,0,0,.1);
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #d6f5d6;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--shadow_box);
+}
+header .logo{
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Patrick Hand', cursive;
+    justify-content: unset;
+    color:#27ae60;
+    text-decoration: none;
+
+}
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--light_color);
+    text-align: center;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    right:90px;
+    text-decoration: none;
+}
+header .navbar a:hover{
+    color: #d6f5d6;
+    background: #27ae60;
+}
+header .icons i,header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color:#d6f5d6;
+    border-radius: 50%;
+    background: #27ae60;
+    text-decoration: none;
+
+}
+header .icons i:hover,header .icons a:hover{
+    color: #27ae60;
+    background:#d6f5d6;
+}
+header .navbar.active{
+    clip-path: polygon(0 0,100% 0,100% 100%,0% 100%);
+}
+header .icons #bars{
+    display: none;
+}
+
+.headd{
+    color: #4e4e32;
+    font-size: 5rem;
+}
+.container {
+    position: relative;
+    width: 20%;
+    height:20%;
+    float: left;
+    padding: 5px;
+    margin-left: 50px;
+    background-color: #ffffff;
+    /*border: solid;*/
+    /*border-radius: 50%;*/
+    border-color: #27ae60;">
+}
+
+
+
+.container .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 224px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    /*border-radius: 50%;*/
+}
+
+/*.middle {*/
+/*    transition: .5s ease;*/
+/*    opacity: 0;*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+/*    -ms-transform: translate(-50%, -50%);*/
+/*    text-align: center;*/
+/*}*/
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #27ae60;
+    border-color: #27ae60;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    font-family: 'Special Elite', cursive;
+}
+
+/** {*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+.row1::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.cart{
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    left: 1200px;
+    top: 80px;
+}
+.count{
+    width: 20px;
+    height: 20px;
+    background-color: #eafaea;
+    border-radius: 25px;
+    text-align: center;
+    position: absolute;
+    top: 95px;
+    left: 1180px;
+}
+.btn{
+    margin-top: 1rem;
+    display:inline-block;
+    font-size: 1.5rem;
+    color: #d6f5d6 ;
+    width: 95%;
+    background:  #4e4e32;
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+    text-decoration: none;
+
+}
+.btn:hover{
+    background: #27ae60;
+    color: #d6f5d6;
+    letter-spacing: .1rem;
+    text-decoration: none;
+}
+.aa{
+    font-size: 1rem;
+    color: #4e4e32;
+    text-align: center;
+}
+.aa6{
+    font-size: 1.5rem;
+    color: #4e4e32;
+    text-align: center;
+}
+.aa5{
+    font-size: 2rem;
+    color: #27ae60;
+    text-align: center;
+}
+.field{
+    width: 90%;
+    /*border: 2px solid rgba(0, 0, 0, 0);*/
+    outline: none;
+    background-color: rgba(230, 230, 230, 0.6);
+    padding: 0.5rem 0.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 2px;
+    transition: .3s;
+    font-family: 'Archivo Narrow', sans-serif;
+
+}
+.field:hover{/*لما ااشر على الفيلد يتغير لونه*/
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.field:focus{ /*لما اكبس جوا فيلد شو بتغير*/
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+.nameofmeal{
+    color: #27ae60;
+    font-size: 2.2rem;
+    text-align: center;
+}

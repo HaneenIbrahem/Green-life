@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital@1&family=Dancing+Script:wght@500&display=swap');
+<!-- Import the google font style sheet into the current style sheet -->
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html{
+    font-size: 63%;
+    overflow-x: hidden; <!-- The overflow is clipped, and the rest of the content will be invisible -->
+    scroll-badding-top: 5.5rem; <!-- adjust the snapping container’s optimal viewing region -->
+    scroll-behavior: smooth;
+}
+/*:root{*/
+/*<!-- matches the root element of a tree representing the document.-->*/
+/*    --green:#27ae60;*/
+/*    --black:#192a56;*/
+/*    --light_color:#666;*/
+/*    --shadow_box:0.5rem 1.5rem rgba(0,0,0,.1);*/
+/*}*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #d6f5d6;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--shadow_box);
+}
+header .logo{
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Patrick Hand', cursive;
+    justify-content: unset;
+    color:#27ae60;
+    text-decoration: none;
+
+}
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--light_color);
+    text-align: center;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    right:90px;
+    text-decoration: none;
+}
+header .navbar a:hover{
+    color: #d6f5d6;
+    background: #27ae60;
+}
+header .icons i,header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color:#d6f5d6;
+    border-radius: 50%;
+    background: #27ae60;
+    text-decoration: none;
+
+}
+header .icons i:hover,header .icons a:hover{
+    color: #27ae60;
+    background:#d6f5d6;
+}
+header .navbar.active{
+    clip-path: polygon(0 0,100% 0,100% 100%,0% 100%);
+}
+header .icons #bars{
+    display: none;
+}
+@media (max-width: 991px) {
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding:1rem 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+}
+@media (max-width: 768px){
+    header .icons #bars{
+        display: inline-block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #27ae60;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom:.1rem solid rgba(0,0,0,.2) ;
+        padding: .1rem;
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    }
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #d6f5d6;
+    }
+    #search_form #search_box {
+        width: 90%;
+        margin: 0 1rem;
+    }
+    .home .home_slider .slide .content h3{
+        color: #4e4e32;
+        font-size: 5rem;
+    }
+}
+@media (max-width: 991px) {
+    html{
+        font-size: 50%;
+    }
+}
+#search_form{
+    position: fixed;
+    top: -110%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1004;
+    background: rgba(0,0,0,.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+#search_form #search_box{
+    width: 40rem;
+    border-bottom: .1rem solid #d6f5d6;
+    padding: 1rem 0;
+    color: #d6f5d6;
+    font-size: 3rem;
+    text-transform: none;
+    background: none;
+}
+#search_form #search_box::placeholder{
+    color:#d6f5d6 ;
+}
+#search_form #search_box::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+}
+#search_form label{
+    color:#d6f5d6;
+    cursor: pointer;
+    font-size: 3rem;
+}
+#search_form label:hover{
+    color: #27ae60;
+}
+#search_form #close{
+    position: absolute;
+    color: #d6f5d6;
+    cursor: pointer;
+    top: 2rem;
+    right: 3rem;
+    font-size: 5rem;
+}
+#search_form.active{
+    top: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+
+}
+.empty{
+    height:50px;
+}
+
+.container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /*justify-content: space-evenly;*/
+    align-items: center;
+    padding: 10px 0px;
+
+
+}
+
+.container:after{/* الخلفية الكاملة تحت */
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url("img/download.jpg") no-repeat center;
+    background-size: cover;
+    filter: blur(50px);
+    z-index: -1; /*الصورة مغبشة*/
+}
+.contact-box{
+    max-width: 600px;
+    /*max-height: 600px;*/
+    /*position: absolute;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+
+}
+
+
+
+.right{
+    padding: 25px 40px;
+}
+
+h2{
+    font-family: 'Fredoka One', cursive;
+    position: relative;
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+    font-size: 2.6rem;
+}
+
+h2:after{ /*الخط تحت الكلمة*/
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 150px;
+    border-radius: 2px;
+    background-color: #27ae60; /*لون الخط تحت كونتاكت*/
+}
+
+.field{
+    width: 80%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: rgba(230, 230, 230, 0.6);
+    padding: 1rem 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 22px;
+    transition: .3s;
+    font-family: 'Archivo Narrow', sans-serif;
+    /*font-family: 'Patrick Hand', cursive;*/
+    /*font-family: 'Dancing Script', cursive;*/
+}
+
+.field:hover{/*لما ااشر على الفيلد يتغير لونه*/
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+    min-height: 150px;
+}
+
+.btn{
+    margin-top: 1rem;
+    display:inline-block;
+    font-size: 1.6rem;
+    color: #d6f5d6 ;
+    background:  #27ae60;
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+    text-decoration: none;
+}
+
+.btn:hover{
+    color: #27ae60;
+    background: #ffffff;
+}
+
+.field:focus{ /*لما اكبس جوا فيلد شو بتغير*/
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+@media screen and (max-width: 880px){
+    .contact-box{
+        grid-template-columns: 1fr;
+    }
+
+}
